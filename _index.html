@@ -1,0 +1,101 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Software developer student portfolio: links and selected GitHub projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="_styles.css">
+  <style>
+    /* Tiny add-ons to your existing styles (optional) */
+    .stack { display:flex; gap:10px; flex-wrap:wrap; }
+    .section.narrow { max-width: 720px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Your Name</div>
+      <nav class="links">
+        <a class="icon-btn" href="https://github.com/yourhandle" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/yourhandle/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="icon-btn" href="https://yourwebsite.com" target="_blank" rel="noreferrer">Website</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <h1 class="title">Software Developer — Internship Applicant</h1>
+        <p class="muted">I build small, reliable tools and web apps with Python and JavaScript. Currently looking for a software development internship.</p>
+        <div class="stack" style="margin-top:18px">
+          <a class="btn" href="https://github.com/yourhandle" target="_blank" rel="noreferrer">View my GitHub</a>
+          <a class="btn secondary" href="https://yourwebsite.com" target="_blank" rel="noreferrer">Visit my website</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/yourhandle/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+        </div>
+      </div>
+      <aside class="card">
+        <h2>Quick stack</h2>
+        <div class="pills">
+          <span class="pill">Python</span><span class="pill">Flask</span><span class="pill">JavaScript</span>
+          <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">SQL</span>
+          <span class="pill">Docker</span><span class="pill">Linux</span>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Selected repos -->
+    <section class="section narrow">
+      <h2>Selected Repositories</h2>
+      <div class="grid">
+        <article class="card project">
+          <h3>AFC Squad Official Bot</h3>
+          <p class="muted">Discord bot with slash commands, Dockerized on Raspberry Pi; Flask healthcheck and modular cogs.</p>
+          <div class="links-row">
+            <a class="btn secondary" href="https://github.com/yourhandle/afc-squad-bot" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+        <article class="card project">
+          <h3>Terraform AWS Infra Lab</h3>
+          <p class="muted">VPC, subnets, EC2, ASG & ALB via Terraform. User-data deploys a static site behind Nginx.</p>
+          <div class="links-row">
+            <a class="btn secondary" href="https://github.com/yourhandle/terraform-aws-lab" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+        <article class="card project">
+          <h3>MegaSoft X-L</h3>
+          <p class="muted">Spreadsheet-like UI in Vanilla JS. Persistent state + Playwright tests.</p>
+          <div class="links-row">
+            <a class="btn secondary" href="https://github.com/yourhandle/megasoft-xl" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact (LinkedIn only is fine) -->
+    <section class="section narrow">
+      <div class="card" style="text-align:center">
+        <h2>Contact</h2>
+        <p class="muted">Prefer to be contacted via LinkedIn.</p>
+        <div class="stack" style="justify-content:center">
+          <a class="btn" href="https://www.linkedin.com/in/yourhandle/" target="_blank" rel="noreferrer">Message me on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Your Name. Built with HTML & CSS.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
