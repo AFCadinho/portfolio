@@ -326,6 +326,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .brand {
+    margin-left: 10px;
+  }
+  
   .hero {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -357,6 +361,7 @@ footer {
   .my-work {
     margin-top: 40px;
   }
+  
 }
 
 @media (max-width: 420px) {
