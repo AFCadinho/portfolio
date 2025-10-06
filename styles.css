@@ -239,10 +239,9 @@ header {
 }
 
 .pill.highlight {
-  border: 1px solid #4CAF50;
+  border: 1px solid #4caf50;
   background: rgba(76, 175, 80, 0.08);
 }
-
 
 /* =========================
      MY WORK
@@ -281,7 +280,7 @@ header {
 
 .project-img {
   width: 100%;
-  height: 220px; 
+  height: 220px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -294,8 +293,32 @@ header {
   cursor: pointer;
 }
 
+.project a {
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+}
 
+.project a::after {
+  content: "Try it yourself →";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  opacity: 0;
+  border-radius: 12px;
+  transition: opacity 0.25s ease;
+}
 
+.project a:hover::after {
+  opacity: 1;
+}
 
 /* =========================
      CONTACT
@@ -335,7 +358,7 @@ footer {
   .brand {
     margin-left: 10px;
   }
-  
+
   .hero {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -367,7 +390,6 @@ footer {
   .my-work {
     margin-top: 40px;
   }
-  
 }
 
 @media (max-width: 420px) {
