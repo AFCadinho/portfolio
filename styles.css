@@ -293,14 +293,14 @@ header {
   cursor: pointer;
 }
 
-.project a {
+.project .demo {
   position: relative;
   display: block;
   border-radius: 12px;
   overflow: hidden;
 }
 
-.project a::after {
+.project .demo::after {
   content: "Try it yourself →";
   position: absolute;
   inset: 0;
@@ -316,7 +316,7 @@ header {
   transition: opacity 0.25s ease;
 }
 
-.project a:hover::after {
+.project .demo:hover::after {
   opacity: 1;
 }
 
