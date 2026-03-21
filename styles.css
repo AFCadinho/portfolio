@@ -226,19 +226,28 @@ header {
   max-width: 360px;
 }
 
+.stack-items h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  text-align: center;
+}
+
 .pills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
 }
 
 .pill {
-  padding: 6px 10px;
+  padding: 4px 8px;  
   border-radius: 9999px;
   border: 1px solid var(--color-border);
   background: rgba(255, 255, 255, 0.04);
-  font-size: 12px;
+  font-size: 11px;  
   text-align: center;
   white-space: nowrap;
 }
