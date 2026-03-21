@@ -183,9 +183,13 @@ header {
 
 .btn.secondary {
   background: transparent;
-  border: 1px solid var(--color-border);
-  color: var(--color-txt);
-  box-shadow: none;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn.secondary:hover {
+  background: var(--color-accent);
+  color: #fff;
 }
 
 .btn:hover,
@@ -193,6 +197,7 @@ header {
   transform: translateY(-1px) scale(1.03);
   text-decoration: none;
 }
+
 
 /* =========================
      STACK ASIDE
@@ -207,7 +212,7 @@ header {
   background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-card);
-  padding: 18px;
+  padding: 22px;
   box-shadow: var(--shadow-box);
 }
 
@@ -264,19 +269,36 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
   width: 100%;
+  align-items: stretch;
+}
+
+.project-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 12px 0 12px;
+  padding: 0 6px;
 }
 
 .project {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 12px;
+  gap: 14px;
+  padding-bottom: 8px;
+}
+
+.project p {
+  flex-grow: 1;
 }
 
 .links-row {
   display: flex;
   justify-content: center;
+  margin-top: 12px;
+  padding-top: 8px;
 }
+
 
 .project-img {
   width: 100%;

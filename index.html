@@ -36,11 +36,13 @@
                     <div class="my-profile">
                         <div class="introduction">
                             <img src="static/adinho.jpg" alt="Photo of Adi Putra" class="profile-photo">
-                            <p class="muted">Hi! I’m Adi. I love building things I’d use myself — and even more when
-                                others enjoy them too. Whether it’s a Discord bot, web application, or a simple tool
-                                that makes life easier, I like turning ideas into reality. Python is my favorite
-                                language because it feels natural, expressive, and fun to use. I focus on writing clean,
-                                simple, and readable code
+                            <p class="muted">
+                                Hi! I’m Adi, a software developer student who enjoys solving problems and building
+                                things I’d actually use.
+                                I like working on the logic side of applications, whether it’s automation or small tools
+                                that make life easier.
+                                I try to keep my code simple and readable.
+                                Python is my favorite language because it lets me write code that matches how I think.
                             </p>
                         </div>
                     </div>
@@ -76,88 +78,88 @@
             <h2>Projects I’m Most Proud Of</h2>
             <div class="grid">
                 <article class="card project">
-                    <h3>AFC Official Discord Bot</h3>
+                    <h3>PokeChamps — Pokémon Team Builder & Analyzer</h3>
+
+                    <a class="demo" href="https://pokechamps-e44w.vercel.app/" target="_blank" rel="noreferrer">
+                        <img src="static/pokechamps.gif" alt="PokeChamps project preview" class="project-img">
+                        <span class="overlay-text">Click for demo</span>
+                    </a>
+                    <p class="muted">
+                        PokeChamps is a Pokémon team-building web app built with Vue 3 and TypeScript. It allows users
+                        to explore Pokémon, build teams, and analyze weaknesses based on type matchups. The app is
+                        installable as a PWA, works offline via service workers, and uses browser APIs like
+                        notifications and vibration. Teams are stored locally using localStorage, allowing users to
+                        persist their data without a backend.
+                    </p>
+                    <div class="pills project-pills">
+                        <span class="pill">Vue 3</span>
+                        <span class="pill">TypeScript</span>
+                        <span class="pill">Progressive Web App</span>
+                        <span class="pill">Service Workers</span>
+                        <span class="pill">Local Storage</span>
+                        <span class="pill">Browser APIs</span>
+                    </div>
+                    <div class="links-row">
+                        <a class="btn secondary" href="https://github.com/AFCadinho/pokechamps" target="_blank"
+                            rel="noreferrer">View on Github</a>
+                    </div>
+                </article>
+
+                <article class="card project">
+                    <h3>Discord Community Management System</h3>
 
                     <a class="demo" href="https://discord.gg/VYs72P9PZn" target="_blank" rel="noreferrer">
                         <img src="static/afc_bot.gif" alt="AFC Official Discord Bot screenshot" class="project-img">
                         <span class="overlay-text">Click for demo — use <code>/help</code></span>
                     </a>
-                    <p class="muted">A custom Discord bot I built to manage my guild's discord server in an online
-                        fan-made Pokémon MMORPG.
-                        It handles moderation, tournaments, and event reminders — all running on Python with discord.py,
-                        SQLAlchemy, and a PostgreSQL database inside Docker.
-                        I also use Bash scripts and cron jobs to automate repetitive tasks, and the bot integrates the
-                        OpenAI API to answer questions.
-                        Everything the community needs is just one slash command away. This bot is hosted on my
-                        Raspberry pi</p>
+                    <p class="muted">
+                        A Discord bot I built to manage a Discord community in a Pokémon MMORPG.
+                        It handles moderation, tournaments, and scheduled events.
+                        Built with Python, SQLAlchemy, PostgreSQL, and Docker, with automation handled through scheduled cron jobs.
+                    </p>
+
+                    <div class="pills project-pills">
+                        <span class="pill">Python</span>
+                        <span class="pill">discord.py</span>
+                        <span class="pill">SQLAlchemy ORM</span>
+                        <span class="pill">PostgreSQL</span>
+                        <span class="pill">Docker</span>
+                        <span class="pill">Task Scheduling</span>
+                    </div>
                     <div class="links-row">
                         <a class="btn secondary" href="https://github.com/AFCadinho/AFC_Squad_discord_cron"
-                            target="_blank" rel="noreferrer">Github</a>
+                            target="_blank" rel="noreferrer">View on GitHub</a>
                     </div>
                 </article>
 
                 <article class="card project">
-                    <h3>AFC Adinho's Website</h3>
+                    <h3>Pokémon Team Sharing Platform</h3>
 
                     <a class="demo" href="https://afcadinho.com/" target="_blank" rel="noreferrer">
                         <img src="static/adinho_website.gif" alt="AFC Official Discord Bot screenshot"
                             class="project-img">
                         <span class="overlay-text">Click for demo</span>
                     </a>
-                    <p class="muted">My personal website is an extension of my YouTube channel, where I share my
-                        competitive Pokémon teams and strategies with over 7k subscribers.
+                    <p class="muted">
+                        A web platform where I share competitive Pokémon teams and strategies with over 7k subscribers.
+                        Built with Flask and SQLAlchemy, it integrates external data using the PokéAPI and parses team data from Pokepaste using BeautifulSoup.
+                        Users can sign up, search, and filter teams, with additional features for Patreon members.
+                    </p>
 
-                        It’s built with Python, Flask, and SQLAlchemy. The site fetches HTML from an external page and
-                        scans it to find Pokémon names, then uses the PokéAPI to show their images. Users can sign up,
-                        search, and filter through teams — and thanks to the Patreon API, paid members get extra
-                        features. Over 800 players are currently using the website.</p>
+                    <div class="pills project-pills">
+                        <span class="pill">Python</span>
+                        <span class="pill">Flask</span>
+                        <span class="pill">SQLAlchemy ORM</span>
+                        <span class="pill">REST APIs</span>
+                        <span class="pill">Patreon Integration</span>
+                        <span class="pill">HTML & CSS</span>
+                    </div>
                     <div class="links-row">
                         <a class="btn secondary" href="https://github.com/AFCadinho/afc_mobile_website_reponsive"
-                            target="_blank" rel="noreferrer">Github</a>
+                            target="_blank" rel="noreferrer">View on GitHub</a>
                     </div>
                 </article>
 
-                <article class="card project">
-                    <h3>Flightinho</h3>
-
-                    <a class="demo" href="https://flightinho.vercel.app/" target="_blank" rel="noreferrer">
-                        <img src="static/flightinho.gif" alt="AFC Official Discord Bot screenshot" class="project-img">
-                        <span class="overlay-text">Click for demo</span>
-                    </a>
-                    <p class="muted">
-                        A flight management dashboard built with <strong>Vue 3</strong> using the <strong>Composition
-                            API</strong>.
-                        It lets users view airports, edit flight details, and add or remove flights dynamically — all
-                        using reusable components, scoped styles, and slot-based layouts.
-                        The app keeps the state active between tabs using Vue’s reactivity system, ensuring smooth and
-                        consistent data updates.
-                        This project helped me deepen my understanding of state management and component-based design in
-                        modern front-end development.
-                    </p>
-                    <div class="links-row">
-                        <a class="btn secondary" href="https://github.com/AFCadinho/flightinho/" target="_blank"
-                            rel="noreferrer">Github</a>
-                    </div>
-                </article>
-
-                <article class="card project">
-                    <h3>Adinhocel</h3>
-
-                    <a class="demo" href="https://afcadinho.github.io/adinhocel/" target="_blank" rel="noreferrer">
-                        <img src="static/adinhocel.gif" alt="AFC Official Discord Bot screenshot" class="project-img">
-                        <span class="overlay-text">Click for demo</span>
-                    </a>
-                    <p class="muted">I made this spreadsheet app while living with my brother — we wanted a simple way
-                        to track shared expenses, so I built one myself. It’s built with Vue 3 and lets users add or
-                        remove rows and columns, edit cells, and calculate quick summaries like sum, avg, max, and min.
-                        Instead of a database, it saves data in local storage and rebuilds the table on reload — a
-                        small, practical project that taught me a lot about reactivity and how easy it can be to create
-                        a simple single page application.</p>
-                    <div class="links-row">
-                        <a class="btn secondary" href="https://github.com/AFCadinho/adinhocel" target="_blank"
-                            rel="noreferrer">Github</a>
-                    </div>
-                </article>
             </div>
         </section>
 
